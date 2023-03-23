@@ -1,0 +1,31 @@
+{
+  "name": "postcss-add-css-prefix",
+  "version": "1.0.0",
+  "description": "a postcss plugin to add a custom prefix",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "yalc publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sskaps/postcss-add-css-prefix.git"
+  },
+  "keywords": [
+    "postcss",
+    "prefix"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sskaps/postcss-add-css-prefix/issues"
+  },
+  "homepage": "https://github.com/sskaps/postcss-add-css-prefix#readme",
+  "peerDependencies": {
+    "postcss": "^7.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
