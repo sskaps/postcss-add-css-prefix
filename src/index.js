@@ -1,8 +1,9 @@
 const postcss = require('postcss');
-const {replaceStr} = require('./utils');
+const { replaceStr, getPkgInfo } = require('./utils');
 
 module.exports = postcss.plugin('postcss-add-css-prefix', function (options = {}) {
-  const { prefix = '' } = options || {};
+  const { name } = getPkgInfo();
+  const { prefix = name } = options || {};
 
   return function (css) {
     css.walkRules(rule => {
